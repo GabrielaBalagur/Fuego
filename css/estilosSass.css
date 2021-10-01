@@ -71,13 +71,14 @@ h1 {
     align-items: flex-end; }
 
 .divFlexQue {
-  height: 100vh;
+  height: 61vh;
   display: flex;
   align-items: center;
   justify-items: center;
   margin: 4vw; }
 
 .mainContacto {
+  height: 77.8vh;
   color: #FFFFFF;
   background: linear-gradient(to right, #F5E833, #9D72FF);
   display: flex;
