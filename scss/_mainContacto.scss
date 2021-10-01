@@ -1,0 +1,72 @@
+.mainContacto{
+    color: $colorCinco;
+    background: linear-gradient(to right, $colorTres, $colorSeis);
+    display: flex;
+    align-items: center;
+    padding: 10vh;
+
+    .form{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-end;
+        width: auto;
+        height: 100%;
+        .form label{
+            color: $colorSeis;
+        }
+
+        .mainContacto .form__campo{
+            border: outset;
+            background-color: $colorSeis;
+            opacity: 50%;
+        }
+        .mainContacto .form__campo:focus{
+            background-color: $colorCinco;
+            opacity: 50%;
+        }
+        .mainContacto textarea{
+            @extend .form__campo;
+        }
+        .mainContacto textarea:focus{
+            @extend .form__campo:focus;
+        }    
+        .reset{
+            border: outset;
+            color: $colorSeis;
+            background-color: $colorCinco;
+        }
+        .submit{
+            @extend .reset;
+        }
+        .reset:focus{
+            background-color: $colorTres;
+            opacity: 50%;
+        }
+        .submit:focus{
+            @extend .submit:focus;
+        }
+        ::placeholder{
+            color: $colorCinco;
+        }
+        
+        .mainContacto select{
+            background-color: transparent;
+        }
+        #select{
+            color: $colorTres;
+            border-color: $colorCinco 3px;
+            background-color: transparent;
+        }
+        .formGenero{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .news{
+            @extend .formGenero;
+            justify-content: center;
+        }
+    }
+}
+

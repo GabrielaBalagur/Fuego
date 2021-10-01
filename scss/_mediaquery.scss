@@ -1,0 +1,146 @@
+@media only screen and (max-width: 600px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    #logo{
+        height: 5vh;
+        margin-left: 0vw;
+    }
+    nav ul{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li{
+        padding: 1vh;
+    }
+    .footer__divFlex{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-around;
+    }    
+
+    .sectionHome {
+        background-image: url(../images/gifBackgroundXs.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        margin-top: 1vw;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .sectionHome__titulo{
+            @include textos($colorUno, 2rem , 500, center);
+            width: 100vw;
+            padding: 20vw 20vw 0vw 20vw;
+        }
+        .sectionHome__texto{
+            @include textos($colorUno, 2rem, 300, center);
+            width: 100vw;
+            padding: 0vw 20vw 70vw 20vw;
+        }
+    }
+    .whatsapp{
+        width: 7vw;
+        height: auto;
+        position: fixed;
+        bottom: 10vh;
+        right: 10px;
+    }
+
+    #sectionFlexQuien{
+        display: flex;
+        flex-direction: column;
+    }
+    #imagenQuien{
+        width: 0%;
+        height: 0%;
+    }
+    #articleQuien{
+        width: 100%;
+        background-color: #606060;
+        display: flex;
+        flex-direction: column;
+    }
+    #sectionFlexQuien h1{
+        @include textos($colorDos, 3rem, 500, right);
+        padding: 2vw;
+    }
+    .divFlexQue{
+        height: 100vh;
+        display: flex;
+        padding: 2vw;
+        align-items: center;
+        flex-direction: column;
+    }
+    iframe{
+        margin: 3rem;
+        width: 70vw;
+    }
+    .mainContacto{
+        font-family: 'Lato', sans-serif;
+        background: linear-gradient(to right, #F5E833, #9D72FF);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding: 10vh;
+
+        .form{
+            width: 100vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .sectionHome {
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer__contacto{
+        color: #606060;
+        font-weight: 700;
+        font-size: 1vw;
+        font-style: normal;
+    }
+    .footer__icono{
+        width: 2vw;
+    }  
+    a{
+        font-size: 1.5vw;
+    }
+    .sectionHome__titulo{
+        width: 50%;
+        font-size: 3vw;
+        font-weight: 500;
+        text-align: center;
+        padding: 3vw 0vw 0vw 6vw;
+    }
+    .sectionHome__texto{
+        width: 50%;
+        font-size: 2vw;
+        font-weight: 300;
+        line-height: 200%;
+        text-align: center;
+        padding-left: 6vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+}
